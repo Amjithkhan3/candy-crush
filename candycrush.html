@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANDY CRUSH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CANDY CRUSH</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link " href="#">HOME</a>
+        <a class="nav-link" href="#">SERVICE</a>
+        <a class="nav-link" href="#">CONTACT</a>
+        
+        <a onclick="logout()" class="nav-link text-dark fw-bold text-decoration-underline" href="#">LOGOUT</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section id="home">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/header.jpg" class="d-block w-100" alt="Nature">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/header5.jpg" class="d-block w-100" alt="City">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/header2.jpg" class="d-block w-100" alt="Forest">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/header3.jpg" class="d-block w-100" alt="Mountains">
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+  <div class="container" style="max-width:800px;">
+    <h2 class="display-4 fw-bold mb-4">
+       INDULGE IN
+      <span class="gradient-text d-block">SWEET &amp; COLORFUL TREATS</span>
+    </h2>
+    <p class="lead text-light mb-4">
+      Discover irresistible candies and decadent desserts that bring joy to every bite.
+    </p>
+  </div>
+</div>
+
+</section>
+<section id="service" class="py-5 bg-light"> 
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold display-5 text-dark">ITEMS AVAILABLE TODAY</h1>
+      <p class="text-muted">Freshly prepared desserts, ready to delight you</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Item 1 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-card">
+          <img src="./images/chocolate.jpg" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold mb-0">Chocolate Cake</h5>
+            <small class="text-muted">Rich & Creamy</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-card">
+          <img src="./images/header4.jpg" class="card-img-top" alt="Cupcake">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold mb-0">Cupcake</h5>
+            <small class="text-muted">Soft & Delicious</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-card">
+          <img src="./images/jelly2.jpg" class="card-img-top" alt="Jelly Beans">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold mb-0">Jelly Beans</h5>
+            <small class="text-muted">Colorful & Sweet</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-card">
+          <img src="./images/desserts.jpg" class="card-img-top" alt="Cheesecake">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold mb-0">Cheesecake</h5>
+            <small class="text-muted">Creamy Classic</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-card">
+          <img src="./images/desserts3.jpg" class="card-img-top" alt="Macarons">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold mb-0">Macarons</h5>
+            <small class="text-muted">French & Colorful</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-card">
+          <img src="./images/icecream.jpg" class="card-img-top" alt="Ice Cream">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold mb-0">Ice Cream</h5>
+            <small class="text-muted">Chilled & Creamy</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dessert-culture" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-6 text-dark">Desserts Around the World 🌎</h2>
+      <p class="text-muted">Discover the sweet traditions of different cultures</p>
+    </div>
+
+    <div id="dessertCarousel" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/tiramisu.jpg" class="d-block w-100" alt="Tiramisu Italy">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h5 class="fw-bold">Tiramisu – Italy</h5>
+            <p>Classic Italian coffee-flavored dessert layered with mascarpone cream.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/mochi.jpg" class="d-block w-100" alt="Mochi Japan">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h5 class="fw-bold">Mochi – Japan</h5>
+            <p>Soft and chewy rice cake filled with sweet bean paste, a New Year tradition.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/baklava.jpg" class="d-block w-100" alt="Baklava Turkey">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h5 class="fw-bold">Baklava – Turkey</h5>
+            <p>Layers of filo pastry filled with nuts and sweetened with syrup or honey.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/churros.jpg" class="d-block w-100" alt="Churros Spain">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+            <h5 class="fw-bold">Churros – Spain</h5>
+            <p>Crispy fried dough sticks rolled in sugar, served with chocolate sauce.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#dessertCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#dessertCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#dessertCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#dessertCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#dessertCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#dessertCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-6 text-dark">Contact Us 📞</h2>
+      <p class="text-muted">We’d love to hear from you or see you in person!</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="p-4 h-100 shadow-sm bg-white rounded-4 contact-card">
+          <h5 class="fw-bold mb-3">Get in Touch</h5>
+          <p class="mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i><strong>Phone:</strong> +91 98765 43210</p>
+          <p class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i><strong>Email:</strong> info@dessertshop.com</p>
+          <p class="mb-0"><i class="bi bi-clock-fill text-warning me-2"></i><strong>Hours:</strong> Mon–Sat 10 AM – 9 PM</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="p-4 h-100 shadow-sm bg-white rounded-4 contact-card">
+          <h5 class="fw-bold mb-3">Our Location</h5>
+          <p class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i><strong>Address:</strong> Dessert Shop, Main Street, Kochi, Kerala, India</p>
+          <p class="mb-0"><i class="bi bi-bus-front-fill text-warning me-2"></i><strong>Landmark:</strong> Near City Center Mall</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-light py-4 mt-5 position-relative">
+  <div class="container text-center">
+    <p class="mb-2">&copy; 2025 Dessert Shop. All Rights Reserved.</p>
+    <p class="small mb-0">
+      Follow us on 
+      <a href="#" class="text-warning text-decoration-none">Instagram</a> |
+      <a href="#" class="text-warning text-decoration-none">Facebook</a>
+    </p>
+  </div>
+  <button id="backToTop" class="btn btn-warning position-absolute end-0 bottom-0 m-3 d-none">↑ Top</button>
+</footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ if(loginForm){
 
     if(username && password){
       localStorage.setItem('user', username); 
-      window.location.href = 'index.html'; 
+      window.location.href = 'candycrush.html'; 
     } else {
       alert('Please enter valid data');
     }
@@ -16,14 +16,14 @@ if(loginForm){
 }
 
 const user = localStorage.getItem("user");
-if(!user && window.location.pathname.includes("index.html")){
+if(!user && window.location.pathname.includes("candycrush.html")){
   alert("Please login first");
-  window.location = "login.html";
+  window.location = "index.html";
 }
 
 function logout(){
   localStorage.removeItem("user");
-  window.location = "login.html";
+  window.location = "index.html";
 }
 
 const backToTop = document.getElementById('backToTop');
